@@ -13,8 +13,6 @@ def cost_elem_(y, y_hat):
     Raises:
     This function should not raise any Exception.
     """
-    #print('y_hat:', y_hat.tolist())
-    #return (1/(2*len(y))) * sum([(yyy - yy)**2 for yy, yyy in zip(y, y_hat)])
     return np.array([(yyy - yy)**2 for yy, yyy in zip(y, y_hat)])
 
 def cost_(y, y_hat):
@@ -30,5 +28,4 @@ def cost_(y, y_hat):
     Raises:
     This function should not raise any Exception.
     """
-    #print(type(sum(list(cost_elem_(y, y_hat)))))
     return (1/(2*len(y))) * sum(cost_elem_(y, y_hat).flatten().tolist())
