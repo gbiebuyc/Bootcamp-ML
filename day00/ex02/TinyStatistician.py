@@ -1,3 +1,5 @@
+import math
+
 class TinyStatistician:
     def mean(self, x):
         if len(x) == 0:
@@ -23,3 +25,8 @@ class TinyStatistician:
             return None
         mean = self.mean(x)
         return self.mean([(mean-y)**2 for y in x])
+
+    def std(self, x):
+        if len(x) == 0:
+            return None
+        return math.sqrt(self.var(x))
