@@ -1,7 +1,14 @@
 class Vector:
     def __init__(self, arg):
-        self.values = arg
-        self.size = len(arg)
+        if type(arg) == list:
+            self.values = arg
+            self.size = len(arg)
+        elif type(arg) == int:
+            self.values = list(range(arg))
+            self.size = arg
+        elif type(arg) == tuple and len(arg) <= 3:
+            self.values = list(range(*arg))
+            self.size = len(self.values)
 
     def __add__(self, other):
         if type(other) in (int, float):

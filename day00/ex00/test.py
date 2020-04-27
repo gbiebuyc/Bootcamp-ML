@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 from vector import Vector
 
-v1 = Vector([0.0, 1.0, 2.0, 3.0])
+# init
+v1 = Vector(3) # with a size
+assert v1.values == [0.0, 1.0, 2.0]
+assert v1.size == 3
+v1 = Vector((10,15)) # with a range
+assert v1.values ==  [10.0, 11.0, 12.0, 13.0, 14.0]
+assert v1.size == 5
+v1 = Vector([0.0, 1.0, 2.0, 3.0]) # with a list of floats
 assert v1.values == [0.0, 1.0, 2.0, 3.0]
 assert v1.size == 4
 
