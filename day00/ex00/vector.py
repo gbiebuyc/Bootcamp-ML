@@ -34,6 +34,14 @@ class Vector:
     def __rmul__(self, other):
         return self * other
 
+    def __truediv__(self, other):
+        if type(other) in (int, float):
+            return Vector([x/other for x in self.values])
+        raise TypeError('Vector division is only for scalars')
+
+    def __rtruediv__(self, other):
+        return self / other
+
     def __str__(self):
         return '(Vector %s)' % str(self.values)
 

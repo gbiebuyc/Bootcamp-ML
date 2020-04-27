@@ -30,4 +30,10 @@ assert v2.values == [0.0, 5.0, 10.0, 15.0]
 dot_prod = v1 * v2
 assert dot_prod == 70
 
+# div
+v2 = v1 / 5
+assert v2.values == [0.0/5, 1.0/5, 2.0/5, 3.0/5]
+v2 = 5 / v1
+assert v2.values == [0.0/5, 1.0/5, 2.0/5, 3.0/5]
+
 print('All good.')
