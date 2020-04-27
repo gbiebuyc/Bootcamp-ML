@@ -17,3 +17,9 @@ class TinyStatistician:
         if len(x) == 0:
             return None
         return sorted(x)[int(len(x)*percentile*0.01)]
+
+    def var(self, x):
+        if len(x) == 0:
+            return None
+        mean = self.mean(x)
+        return self.mean([(mean-y)**2 for y in x])
