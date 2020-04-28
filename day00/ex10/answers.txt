@@ -1,0 +1,10 @@
+1. We concatenate a column of ones because we need the same shape for the 2 matrices.
+We choose the value 1 to get theta0 in the multiplication.
+
+2. We square the distances in the cost function to better accentuate the differences I think.
+
+3. The cost function's output represents how bad our estimation is.
+
+4. We want the cost function to tend towards zero because it means that y_hat is perfectly equal to the real y.
+
+5. Matrix multiplication is not commutative because the columns of the second matrix have to have the same number of entries as do the rows of the first matrix.
