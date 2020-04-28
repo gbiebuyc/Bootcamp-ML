@@ -14,5 +14,5 @@ def cost_(y, y_hat):
     This function should not raise any Exceptions.
     """
 
-    # I found the solution there: https://towardsdatascience.com/vectorization-implementation-in-machine-learning-ca652920c55d
+    # I adapted the code from there: https://towardsdatascience.com/vectorization-implementation-in-machine-learning-ca652920c55d
     return (1/(2*len(y)))*np.transpose((y_hat - y))@(y_hat - y)
