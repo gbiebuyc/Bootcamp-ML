@@ -2,6 +2,7 @@
 We choose the value 1 to get theta0 in the multiplication.
 
 2. We square the distances in the cost function to better accentuate the differences I think.
+And also, the square is always positive. That is important for us.
 
 3. The cost function's output represents how bad our estimation is.
 
