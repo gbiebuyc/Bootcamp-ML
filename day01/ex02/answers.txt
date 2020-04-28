@@ -1,0 +1,7 @@
+1. We add a column of ones to fit the shape of theta.
+
+2. The cost function squares the distances because we need positive numbers.
+
+3. The cost value represents how bad our prediction is.
+
+4. The cost value should tend toward zero meaning that our prediction is perfect.
